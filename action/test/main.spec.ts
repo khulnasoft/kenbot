@@ -21,15 +21,15 @@ describe('Kenbot Action Tests', () => {
                 'win32' as NodeJS.Platform,
                 'amd64',
                 'khulnasoft.exe',
-                'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-windows-amd64/khulnasoft.exe',
+                'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-windows-amd64/khulnasoft.exe',
             ],
-            ['darwin' as NodeJS.Platform, 'amd64', 'khulnasoft', 'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-mac-386/khulnasoft'],
-            ['linux' as NodeJS.Platform, 'amd64', 'khulnasoft', 'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-linux-amd64/khulnasoft'],
-            ['linux' as NodeJS.Platform, 'arm64', 'khulnasoft', 'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-linux-arm64/khulnasoft'],
-            ['linux' as NodeJS.Platform, '386', 'khulnasoft', 'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-linux-386/khulnasoft'],
-            ['linux' as NodeJS.Platform, 'arm', 'khulnasoft', 'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-linux-arm/khulnasoft'],
-            ['linux' as NodeJS.Platform, 'ppc64', 'khulnasoft', 'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-linux-ppc64/khulnasoft'],
-            ['linux' as NodeJS.Platform, 'ppc64le', 'khulnasoft', 'https://releases.khulnasoft.io/artifactory/kenbot/v1/1.2.3/kenbot-linux-ppc64le/khulnasoft'],
+            ['darwin' as NodeJS.Platform, 'amd64', 'khulnasoft', 'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-mac-386/khulnasoft'],
+            ['linux' as NodeJS.Platform, 'amd64', 'khulnasoft', 'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-linux-amd64/khulnasoft'],
+            ['linux' as NodeJS.Platform, 'arm64', 'khulnasoft', 'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-linux-arm64/khulnasoft'],
+            ['linux' as NodeJS.Platform, '386', 'khulnasoft', 'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-linux-386/khulnasoft'],
+            ['linux' as NodeJS.Platform, 'arm', 'khulnasoft', 'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-linux-arm/khulnasoft'],
+            ['linux' as NodeJS.Platform, 'ppc64', 'khulnasoft', 'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-linux-ppc64/khulnasoft'],
+            ['linux' as NodeJS.Platform, 'ppc64le', 'khulnasoft', 'https://khulnasoft.github.io/kenbot/v1/1.2.3/kenbot-linux-ppc64le/khulnasoft'],
         ];
 
         test.each(cases)('CLI Url for %s-%s', (platform, arch, fileName, expectedUrl) => {
