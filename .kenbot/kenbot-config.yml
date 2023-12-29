@@ -1,0 +1,13 @@
+- params:
+    git:
+      repoName: kengine
+      branches:
+        - dev
+    scan:
+      emailReceivers:
+        - security@khulnasoft.com
+      projects:
+        - workingDirs:
+            - action
+        - workingDirs:
+            - .
