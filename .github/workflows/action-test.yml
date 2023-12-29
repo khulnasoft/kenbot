@@ -1,5 +1,6 @@
 name: "GitHub Action Test"
 on:
+  workflow_dispatch:
   push:
     tags-ignore:
       - '**'
